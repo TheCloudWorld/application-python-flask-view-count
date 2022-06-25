@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  web:
+    image: view_count
+    build: .
+    ports:
+      - "8000:8000"
+  redis:
+    image: redis:alpine
